@@ -77,6 +77,7 @@ html {
   box-sizing: inherit;
 }
 
+@fa-font-path :   "../fonts";
 * {
   box-sizing: border-box;
 }
@@ -535,7 +536,7 @@ video {
   top: 50%;
   left: 0;
   transform: translateY(-50%);
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .nav__link a {
