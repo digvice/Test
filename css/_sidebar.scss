@@ -1,6 +1,7 @@
 .sidebar {
   min-width: 100vw;
-  background-color: #dfe8ef;
+  // background-color: #dfe8ef;
+  background: $bg-gradient;
   padding: 30px 20px;
   display: flex;
   flex-direction: column;
@@ -18,6 +19,7 @@
     min-width: 65px;
     transform: translateX(0%);
     position: sticky;
+    position: -webkit-sticky;
   }
   &.is-opened {
     min-width: 100vw;
@@ -47,6 +49,7 @@
     max-width: 185px;
     margin: 10px auto 50px;
     height: 25px;
+    color: $grey;
     @include rmin(1024) {
       margin: 0 auto 50px;
     }
@@ -70,7 +73,7 @@
     background-repeat: no-repeat;
     transition: .3s;
     @include rmin(1024) {
-      right: -60px;
+      right: -50px;
     }
     @include rmin(1680) {
       right: -75px;
@@ -83,12 +86,12 @@
     &.is-active {
       background-image: url(../img/menu_closed.svg);
       right: 10px;
-      @include rmin(1024) {
-        right: -20px;
-      }
-      @include rmin(1680) {
-        right: -25px;
-      }
+      // @include rmin(1024) {
+      //   right: -20px;
+      // }
+      // @include rmin(1680) {
+      //   right: -25px;
+      // }
     }
   }
 }

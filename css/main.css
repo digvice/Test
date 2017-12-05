@@ -457,29 +457,20 @@ video {
 .info {
   background-color: #dfe8ef;
   width: 100%;
+  margin-bottom: 20px;
   padding: 20px;
   font-family: Arial, sans-serif;
 }
 
 @media only screen and (min-width: 768px) {
   .info {
-    width: 30%;
+    width: 49%;
   }
 }
 
 @media only screen and (min-width: 1680px) {
   .info {
     padding: 30px;
-  }
-}
-
-.info + .info {
-  margin-top: 20px;
-}
-
-@media only screen and (min-width: 768px) {
-  .info + .info {
-    margin-top: 0;
   }
 }
 
@@ -527,7 +518,7 @@ video {
 
 .nav__link {
   position: relative;
-  color: #0a164b;
+  color: #c9d8e4;
   white-space: nowrap;
 }
 
@@ -536,7 +527,7 @@ video {
 }
 
 .nav__link.active svg {
-  fill: #47a9d6;
+  fill: #ffffff;
 }
 
 .nav__link .icon {
@@ -562,7 +553,7 @@ video {
 }
 
 .nav__link svg {
-  fill: #0a164b;
+  fill: #c9d8e4;
 }
 
 .settings {
@@ -622,7 +613,7 @@ video {
 
 .sidebar {
   min-width: 100vw;
-  background-color: #dfe8ef;
+  background: linear-gradient(45deg, #32454c, #26333c);
   padding: 30px 20px;
   display: flex;
   flex-direction: column;
@@ -643,6 +634,7 @@ video {
     min-width: 65px;
     transform: translateX(0%);
     position: sticky;
+    position: -webkit-sticky;
   }
 }
 
@@ -685,6 +677,7 @@ video {
   max-width: 185px;
   margin: 10px auto 50px;
   height: 25px;
+  color: #c9d8e4;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -717,7 +710,7 @@ video {
 
 @media only screen and (min-width: 1024px) {
   .sidebar__btn {
-    right: -60px;
+    right: -50px;
   }
 }
 
@@ -736,18 +729,6 @@ video {
 .sidebar__btn.is-active {
   background-image: url(../img/menu_closed.svg);
   right: 10px;
-}
-
-@media only screen and (min-width: 1024px) {
-  .sidebar__btn.is-active {
-    right: -20px;
-  }
-}
-
-@media only screen and (min-width: 1680px) {
-  .sidebar__btn.is-active {
-    right: -25px;
-  }
 }
 
 .icon-arrow {
