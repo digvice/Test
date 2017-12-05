@@ -1,0 +1,117 @@
+
+// variables
+  //colors
+  $text-color: #252525; // main_text
+  $grey: #c9d8e4; // nav text
+  $light-grey: #96b2c9; // timer circle
+  $dark-blue: #0a164b; // title text
+  $blue: #47a9d6; //buttons_bg
+  $bg-grey: #e6ebf0; // section_bg
+
+  // fonts
+  $default-fonts: Arial, sans-serif;
+
+//font-face
+// @include font(GothaProBold, GothaProBol);
+// @include font(HelveticaNeueCyr-Light, HelveticaNeueCyr-Light);
+// @include font(HelveticaNeueCyr-Medium, HelveticaNeueCyr-Medium);
+// @include font(HelveticaNeueCyr-Roman, HelveticaNeueCyr-Roman);
+
+//usage
+@mixin g-bold{
+  font-family: $default-fonts;
+}
+@mixin light{
+  font-family: $default-fonts;
+}
+@mixin medium{
+  font-family: $default-fonts;
+}
+@mixin roman{
+  font-family: $default-fonts;
+}
+
+// base styles
+* {
+  box-sizing: border-box;
+}
+
+body{
+  @include light;
+  font-size: 14px;
+  color: $text-color;
+  background-color: #fff;
+  width: 100vw;
+  @include rmin(1024){
+    font-size: 18px;
+    overflow-x: hidden;
+  }
+  @include rmin(1680){
+    font-size: 24px;
+  }
+}
+
+button{
+  font-family: inherit;
+}
+
+a{
+  text-decoration: none;
+}
+
+img,
+video{
+  max-width: 100%;
+}
+
+.main {
+  display: flex;
+  position: relative;
+  min-height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 1700px;
+  margin: 0 auto;
+}
+
+.content {
+  flex: 1 1;
+  width: 320px;
+  overflow-x: hidden;
+  @include rmin(1024) {
+    width: auto;
+  }
+}
+
+.title {
+  font-size: 30px;
+  color: $dark-blue;
+  padding-left: 20px;
+  @include medium;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.address {
+  font-size: 14px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  line-height: 1.5;
+  @include rmin(1024) {
+    font-size: 18px;
+  }
+  span {
+    font-size: 14px;
+    color: $blue;
+    @include rmin(1024) {
+      font-size: 24px;
+    }
+  }
+}
+
+.qr {
+  width: 177px;
+  height: 177px;
+}

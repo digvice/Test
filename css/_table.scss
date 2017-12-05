@@ -1,0 +1,67 @@
+.table-container {
+  width: 100%;
+  overflow-x: scroll;
+}
+.table {
+  margin-bottom: 50px;
+  thead {
+    background-color: $light-grey;
+    color: #fff;
+    text-align: left;
+  }
+  tr th:first-child {
+    width: 40px;
+  }
+  tbody {
+    border-top: 15px solid #fff;
+    background-color: #dfe8ef;
+    font-size: 16px;
+    @include rmin(768) {
+      font-size: 18px;
+    }
+  }
+  td, th {
+    padding: 20px;
+  }
+  &_wallets {
+    tr td:last-child {
+      width: 260px;
+    }
+    tr td:first-child,
+    tr th:first-child {
+      width: 10px;
+      min-width: 10px;
+      padding: 0;
+      @include rmin(1680) {
+        width: 15px;
+        min-width: 15px;
+      }
+    }
+    tr.active td:first-child {
+      background-color: #7abc61;
+    }
+    tbody {
+      background-color: #fff;
+    }
+    td, th {
+      padding: 10px;
+      @include rmin(1680) {
+        padding: 15px;
+      }
+    }
+  }
+}
+
+.table-btn {
+  display: flex;
+  justify-content: space-between;
+  .btn {
+    height: 40px;
+    line-height: 40px;
+    width: 120px;
+    padding: 0;
+  }
+  .btn + .btn {
+    margin-left: 20px;
+  }
+}

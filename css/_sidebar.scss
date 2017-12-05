@@ -1,0 +1,94 @@
+.sidebar {
+  min-width: 100vw;
+  background-color: #dfe8ef;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 16px;
+  flex: 0 0;
+  transition: .5s;
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  transform: translateX(-100%);
+  @include rmin(1024) {
+    min-width: 65px;
+    transform: translateX(0%);
+    position: sticky;
+  }
+  &.is-opened {
+    min-width: 100vw;
+    transform: translateX(0%);
+    @include rmin(1024) {
+      min-width: 280px;
+    }
+    @include rmin(1680) {
+      min-width: 375px;
+    }
+    .sidebar__logo img{
+      display: none;
+      &.opened {
+        display: block;
+      }
+    }
+    .nav__link .text{
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  &__item {
+    width: 100%;
+    overflow: hidden;
+  }
+  &__logo {
+    max-width: 185px;
+    margin: 10px auto 50px;
+    height: 25px;
+    @include rmin(1024) {
+      margin: 0 auto 50px;
+    }
+    img {
+      height: 25px;
+      &.opened {
+        display: none;
+      }
+    }
+  }
+  &__btn {
+    position: absolute;
+    right: -45px;
+    width: 40px;
+    height: 40px;
+    background-color: $light-grey;
+    border-radius: 50%;
+    background-image: url(../img/menu_opened.svg);
+    background-size: 80%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    transition: .3s;
+    @include rmin(1024) {
+      right: -60px;
+    }
+    @include rmin(1680) {
+      right: -75px;
+      width: 50px;
+      height: 50px;
+    }
+    &:hover {
+      background-color: lighten($light-grey, 10);
+    }
+    &.is-active {
+      background-image: url(../img/menu_closed.svg);
+      right: 10px;
+      @include rmin(1024) {
+        right: -20px;
+      }
+      @include rmin(1680) {
+        right: -25px;
+      }
+    }
+  }
+}

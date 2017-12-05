@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Main Page</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=320, initial-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" media="all" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" media="all" href="css/app.css">
+  </head>
+
+  <body>
+    <!--content-->
+    <main class="main">
+      <div class="sidebar"><button class="sidebar__btn js-open-nav" type="button"></button>
+        <div class="sidebar__item">
+          <div class="sidebar__logo"><img class="opened" src="img/logo.svg"><img src="img/vh.svg"></div>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__link active"><a href="#"> <span class="icon"><svg class="icon icon-home"><use xlink:href="img/sprite.svg#icon-home"></use></svg></span><span class="text">Главная</span></a></li>
+              <li class="nav__link"><a href="#"> <span class="icon"><svg class="icon icon-bitcoin"><use xlink:href="img/sprite.svg#icon-bitcoin"></use></svg></span><span class="text">Инвестировать в BTC</span></a></li>
+              <li class="nav__link"><a href="#"> <span class="icon"><svg class="icon icon-coins"><use xlink:href="img/sprite.svg#icon-coins"></use></svg></span><span class="text">Инвестировать альткоины</span></a></li>
+              <li class="nav__link"><a href="#"> <span class="icon"><svg class="icon icon-history"><use xlink:href="img/sprite.svg#icon-history"></use></svg></span><span class="text">История транзакций</span></a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="sidebar__item">
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__link"><a href="#"> <span class="icon"><svg class="icon icon-settings"><use xlink:href="img/sprite.svg#icon-settings"></use></svg></span><span class="text">Настройки</span></a></li>
+              <li class="nav__link"><a href="#"> <span class="icon"><svg class="icon icon-logout"><use xlink:href="img/sprite.svg#icon-logout"></use></svg></span><span class="text">Выход</span></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="content">
+        <div class="container">
+          <header class="header">
+            <div class="header__content">
+              <div class="header__item">
+                <p class="header__login">investor@mobo.coin</p>
+              </div>
+              <div class="header__item"><select class="select"><option>EN</option><option>RU</option></select></div>
+            </div>
+          </header>
+          <div class="info-container">
+            <div class="info">
+              <div class="info__row">
+                <p class="info__title">Количество ваших токенов</p>
+                <p class="info__balance">Баланс</p>
+              </div>
+              <div class="info__row">
+                <p class="info__title info__title_value">mbc</p>
+                <p class="info__balance">0</p>
+              </div>
+            </div>
+            <div class="info">
+              <div class="info__row">
+                <p class="info__title">Всего продано токенов</p>
+                <p class="info__balance">Баланс</p>
+              </div>
+              <div class="info__row">
+                <p class="info__title info__title_value">mbc</p>
+                <p class="info__balance">0</p>
+              </div>
+            </div>
+            <div class="info">
+              <div class="info__row">
+                <p class="info__title">Общий объем инвестиций</p>
+                <p class="info__balance">Баланс</p>
+              </div>
+              <div class="info__row">
+                <p class="info__title info__title_value">USD</p>
+                <p class="info__balance">0</p>
+              </div>
+            </div>
+          </div>
+          <h2 class="title">Bonus program</h2>
+          <div class="table-container">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Start</th>
+                  <th>Stop</th>
+                  <th>Timer</th>
+                  <th>Bonus</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td> </td>
+                  <td> </td>
+                  <td> </td>
+                  <td> </td>
+                  <td> </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <form class="form">
+            <div class="form__field"><label for="token">Количество токенов:</label><input type="text" id="token" name="token" placeholder="Введите количество токенов в копейках"></div>
+            <div class="form__field"><label for="token">ETH кошелек:</label><input type="text" id="token" name="token"></div>
+            <div class="form__btn"><button class="btn">Подтвердить</button></div>
+          </form>
+          <div class="settings">
+            <div class="settings__tab tab"><button class="settings__link active tab-link" onclick="openDetail(event, 'wallets')" id="defaultOpen"><span>wallets</span></button><button class="settings__link tab-link tab-link_detail" onclick="openDetail(event, 'security')"><span>security</span></button></div>
+            <div
+              class="settings__tabcontent tabcontent visible" id="wallets">
+              <form class="form form_horizontal">
+                <div class="form__field"><label for="wallet">Add wallet:</label><input type="text" id="wallet" name="wallet" placeholder="Enter your Waves wallet"></div>
+                <div class="form__btn"><button class="btn">ADD</button></div>
+              </form>
+              <div class="table-container">
+                <table class="table table_wallets">
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th>Wallet</th>
+                      <th>Status</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="active">
+                      <td></td>
+                      <td>3PNNLTSMNS8fKBG1VwxN9XkNPy7z488NzzZ</td>
+                      <td>Active</td>
+                      <td>
+                        <div class="table-btn"><button class="btn btn_green" disabled="disabled">Activate</button><button class="btn btn_red">Delete</button></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>3PNNLTSMNS8fKBG1VwxN9XkNPy7z488NzzZ</td>
+                      <td>Inactive</td>
+                      <td>
+                        <div class="table-btn"><button class="btn btn_green">Activate</button><button class="btn btn_red">Delete</button></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>3PNNLTSMNS8fKBG1VwxN9XkNPy7z488NzzZ</td>
+                      <td>Inactive</td>
+                      <td>
+                        <div class="table-btn"><button class="btn btn_green">Activate</button><button class="btn btn_red">Delete</button></div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+          </div>
+          <div class="settings__tabcontent tabcontent" id="security">
+            <form class="form">
+              <div class="form__field"><label for="current">Current Password:</label><input type="text" id="current" name="current" placeholder="Enter current password"></div>
+              <div class="form__field"><label for="newpass">New Password:</label><input type="text" id="newpass" name="newpass" placeholder="Enter new password"></div>
+              <div class="form__field"><label for="confirmpass">Confirm New Password:</label><input type="text" id="confirmpass" name="confirmpass" placeholder="Enter new password again"></div>
+              <div class="form__btn"><button class="btn">Save</button></div>
+            </form>
+          </div>
+        </div>
+      </div>
+      </div>
+    </main>
+    <!--LOAD scripts-->
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+    <script type="text/javascript" src="http://scrollmagic.io/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+
+</html>

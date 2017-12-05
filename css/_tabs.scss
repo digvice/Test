@@ -1,0 +1,12 @@
+.tab-link {
+  display: block;
+  text-align: left;
+  background-color: transparent;
+}
+
+.tabcontent {
+  display: none;
+  &.visible {
+    display: block;
+  }
+}

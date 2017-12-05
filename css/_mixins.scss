@@ -1,0 +1,63 @@
+@import 'reset';
+
+@mixin r($width){
+  @media only screen and (max-width: $width+ "px"){
+    @content
+  }
+}
+
+@mixin rmin($width){
+  @media only screen and (min-width: $width+ "px"){
+    @content
+  }
+}
+
+@mixin rh($height){
+  @media only screen and (max-height: $height + "px"){
+    @content
+  }
+}
+
+@mixin rhmin($height){
+  @media only screen and (min-height: $height + "px"){
+    @content
+  }
+}
+
+@mixin cover{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+@mixin contain{
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 50%;
+}
+
+// vertical-align at center
+@mixin vcenter{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+// font-family
+@mixin font($alias, $name){
+  @font-face {
+    font-family: $alias;
+    src: url("fonts/" + $name + ".woff2") format("woff2"), url("fonts/" + $name + ".woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
+@mixin clr{
+  &:after{
+  content: " ";
+  display: table;
+  clear: both;
+  }
+}

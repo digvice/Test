@@ -1,0 +1,33 @@
+.header {
+    width: 100%;
+    position: relative;
+    padding-bottom: 40px;
+    @include rmin(1024) {
+      padding-top: 15px;
+    }
+    @include rmin(1680) {
+      padding-top: 20px;
+    }
+    &__content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      @include rmin(1024) {
+        height: 70px;
+      }
+    }
+    &__login {
+      font-size: 16px;
+      @include medium;
+      line-height: 40px;
+      position: relative;
+      @include rmin(1024) {
+        font-size: 18px;
+      }
+      @include rmin(1680) {
+        font-size: 24px;
+      }
+    }
+  }
+  

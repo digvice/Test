@@ -1,0 +1,41 @@
+.settings {
+  margin-bottom: 50px;
+  @include rmin(1024) {
+    display: flex;
+    align-items: flex-start;
+  }
+  &__tab {
+    min-width: 180px;
+    background-color: #dfe8ef;
+    @include rmin(1680) {
+      min-width: 220px;
+    }
+  }
+  &__link {
+    padding: 15px 30px;
+    @include medium;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: $dark-blue;
+    position: relative;
+    @include rmin(1680) {
+      padding: 25px 40px;
+      font-size: 18px;
+    }
+    &.active:before {
+      content: '';
+      width: 15px;
+      height: 100%;
+      background-color: $blue;
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+  &__tabcontent {
+    padding-left: 3%;
+    padding-top: 30px;
+    flex: 1 1;
+  }
+}
