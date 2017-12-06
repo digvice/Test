@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Investor Main Page</title>
+    <title>Investor Withdraw</title>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=320, initial-scale=1, user-scalable=no">
     <meta name="format-detection" content="telephone=no">
@@ -107,71 +107,80 @@
             </div>
           </header>
           <div class="info-container">
+
+            <div class="info">
+              <div class="calc__row">
+                <h2 class="calc__title">Calculator</h2>
+              </div>
+              <div class="calc__row">
+                <form class="form">
+                  <div class="form__field">
+                    <label for="tokens">Tokens</label>
+                    <input type="text" id="token" name="tokens">
+                  </div>
+                  <div class="form__field">
+                    <label for="ethereum">ETH</label>
+                    <input type="text" id="ethereum" name="ethereum">
+                  </div>
+                </form>
+              </div>
+              <p class="address">You can withdraw only an amount of 50 or more tokens</p>
+            </div>
+
             <div class="info">
               <div class="info__row">
-                <p class="info__title">Количество ваших токенов</p>
-                <p class="info__balance">Баланс</p>
+                <p class="calc__title">You currently own marketing tokens</p>
+                <p class="calc__balance">0</p>
               </div>
               <div class="info__row">
-                <p class="info__title info__title_value">mbc</p>
-                <p class="info__balance">0</p>
+                <form class="form">
+                  <div class="form__field">
+                    <label for="tokens">Please enter number of tokens you would like to withdraw</label>
+                    <input type="number" min="0" id="token" name="tokens" placeholder="Please enter number of tokens">
+                  </div>
+                </form>
+              </div>
+              <div class="info__row">
+                <p>If you are using your registered ETH wallet <span class="wallet">0x0000000000000000000000000000000000000000</span> leave next field blank.</p>
+              </div>
+              <div class="info__row">
+                <form class="form">
+                    <div class="form__field">
+                      <label for="">You can send to a different ETH wallet</label>
+                      <input type="number" min="0" id="" name="" placeholder="Type ETH wallet">
+                    </div>
+                    <div class="form__btn"><button class="btn">Submit</button></div>
+                  </form>
               </div>
             </div>
-            <div class="info">
-              <div class="info__row">
-                <p class="info__title">Всего продано токенов</p>
-                <p class="info__balance">Баланс</p>
-              </div>
-              <div class="info__row">
-                <p class="info__title info__title_value">mbc</p>
-                <p class="info__balance">0</p>
-              </div>
+
+            <div class="table-container">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Investor's email</th>
+                    <th>Tokens</th>
+                    <th>ETH</th>
+                    <th>Date created</th>
+                    <th>Date updated</th>
+                    <th>Approval status</th>
+                    <th>Transaction status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-            <div class="info">
-              <div class="info__row">
-                <p class="info__title">Общий объем инвестиций</p>
-                <p class="info__balance">Баланс</p>
-              </div>
-              <div class="info__row">
-                <p class="info__title info__title_value">USD</p>
-                <p class="info__balance">0</p>
-              </div>
-            </div>
-            <div class="info">
-                <div class="info__row">
-                  <p class="info__title">Количество ваших токенов</p>
-                  <p class="info__balance">Баланс</p>
-                </div>
-                <div class="info__row">
-                  <p class="info__title info__title_value">mbc</p>
-                  <p class="info__balance">0</p>
-                </div>
-              </div>
-          </div>
-          <h2 class="title">Bonus program</h2>
-          <div class="table-container">
-            <table class="table">
-              <thead>
-                <tr>
-                  <th>#</th>
-                  <th>Start</th>
-                  <th>Stop</th>
-                  <th>Timer</th>
-                  <th>Bonus</th>
-                  <th>Status</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1</td>
-                  <td> </td>
-                  <td> </td>
-                  <td> </td>
-                  <td> </td>
-                  <td> </td>
-                </tr>
-              </tbody>
-            </table>
+
           </div>
         </div>
       </div>
