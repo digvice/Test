@@ -24,6 +24,8 @@
   // }
   &__row {
     display: flex;
+    overflow: hidden;
+    word-break: break-word;
     & + & {
       margin-top: 30px;
     }

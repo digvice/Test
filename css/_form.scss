@@ -42,10 +42,10 @@
     &__btn {
       margin-top: 30px;
       margin-bottom: 30px;
-      @include rmin(1024) {
-        margin-top: 60px;
-        margin-bottom: 60px;
-      }
+      // @include rmin(1024) {
+      //   margin-top: 60px;
+      //   margin-bottom: 60px;
+      // }
     }
     &_horizontal {
       max-width: 100%;
@@ -124,7 +124,8 @@
     background-color: $blue;
     color: #fff;
     box-shadow: none;
-    width: 200px;
+    // width: 200px;
+    min-width: 200px;
     text-align: center;
     position: relative;
     z-index: 3;

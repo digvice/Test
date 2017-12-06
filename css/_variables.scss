@@ -8,10 +8,10 @@
   $blue: #47a9d6; //buttons_bg
   $bg-grey: #e6ebf0; // section_bg
   $bg-gradient: linear-gradient(45deg, #32454c, #26333c);
+  $alert: #ff1100;
 
   // fonts
   $default-fonts: Arial, sans-serif;
-  @fa-font-path:   "../fonts";
 
 //font-face
 // @include font(GothaProBold, GothaProBol);
@@ -98,8 +98,8 @@ video{
 
 .address {
   font-size: 14px;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   line-height: 1.5;
   @include rmin(1024) {
     font-size: 18px;
@@ -112,8 +112,11 @@ video{
     }
   }
 }
-
 .qr {
   width: 177px;
   height: 177px;
+}
+.alert{
+  color: $alert;
+  margin: 20px 0;
 }

@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Admin Main Page</title>
+    <title>Investor Invest in Euro</title>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=320, initial-scale=1, user-scalable=no">
     <meta name="format-detection" content="telephone=no">
@@ -107,71 +107,43 @@
             </div>
           </header>
           <div class="info-container">
-            <div class="info">
-              <div class="info__row">
-                <p class="info__title">Количество ваших токенов</p>
-                <p class="info__balance">Баланс</p>
-              </div>
-              <div class="info__row">
-                <p class="info__title info__title_value">mbc</p>
-                <p class="info__balance">0</p>
+            <div class="calc noico">
+              <div class="calc__row">
+                <p>There is no active ICO.</p>
               </div>
             </div>
-            <div class="info">
-              <div class="info__row">
-                <p class="info__title">Всего продано токенов</p>
-                <p class="info__balance">Баланс</p>
-              </div>
-              <div class="info__row">
-                <p class="info__title info__title_value">mbc</p>
-                <p class="info__balance">0</p>
+            <div class="calc tokensSoldOut">
+              <div class="calc__row">
+                <p>Unfortunately all tokens have been sold out. Please try later with the next round of our Ico.</p>
               </div>
             </div>
-            <div class="info">
-              <div class="info__row">
-                <p class="info__title">Общий объем инвестиций</p>
-                <p class="info__balance">Баланс</p>
+            <div class="calc">
+              <div class="calc__row">
+                <h2 class="calc__title">Calculator</h2>
               </div>
-              <div class="info__row">
-                <p class="info__title info__title_value">USD</p>
-                <p class="info__balance">0</p>
+              <div class="calc__row">
+                <form class="form">
+                  <div class="form__field">
+                    <label for="tokens">Tokens:</label>
+                    <input type="text" id="token" name="tokens">
+                  </div>
+                  <div class="form__field">
+                    <label for="ethereum">EUR:</label>
+                    <input type="text" id="ethereum" name="ethereum">
+                  </div>
+                </form>
               </div>
-            </div>
-            <div class="info">
-                <div class="info__row">
-                  <p class="info__title">Количество ваших токенов</p>
-                  <p class="info__balance">Баланс</p>
+                <p class="alert">Including bonus</p>
+                <p>You will get 10% bonus tokens during this purchase</p>
+                <div class="form__btn">
+                  <button class="btn">Download Invoice</button>
                 </div>
-                <div class="info__row">
-                  <p class="info__title info__title_value">mbc</p>
-                  <p class="info__balance">0</p>
-                </div>
+            </div>
+            <div class="calc">
+              <div class="calc__row">
+                <p>Tokens are converted by the rate and transmitted at the time of payment confirmation. The delay of tokens transaction might be up to 2-3 days. Please send your payment details and enquiries to business@enjoy-life.world</p>
               </div>
-          </div>
-          <h2 class="title">Bonus program</h2>
-          <div class="table-container">
-            <table class="table">
-              <thead>
-                <tr>
-                  <th>#</th>
-                  <th>Start</th>
-                  <th>Stop</th>
-                  <th>Timer</th>
-                  <th>Bonus</th>
-                  <th>Status</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1</td>
-                  <td> </td>
-                  <td> </td>
-                  <td> </td>
-                  <td> </td>
-                  <td> </td>
-                </tr>
-              </tbody>
-            </table>
+            </div>
           </div>
         </div>
       </div>

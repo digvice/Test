@@ -77,7 +77,6 @@ html {
   box-sizing: inherit;
 }
 
-@fa-font-path :   "../fonts";
 * {
   box-sizing: border-box;
 }
@@ -151,8 +150,8 @@ video {
 
 .address {
   font-size: 14px;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   line-height: 1.5;
 }
 
@@ -176,6 +175,11 @@ video {
 .qr {
   width: 177px;
   height: 177px;
+}
+
+.alert {
+  color: #ff1100;
+  margin: 20px 0;
 }
 
 .header {
@@ -292,13 +296,6 @@ video {
   margin-bottom: 30px;
 }
 
-@media only screen and (min-width: 1024px) {
-  .form__btn {
-    margin-top: 60px;
-    margin-bottom: 60px;
-  }
-}
-
 .form_horizontal {
   max-width: 100%;
   margin-bottom: 60px;
@@ -399,7 +396,7 @@ video {
   background-color: #47a9d6;
   color: #fff;
   box-shadow: none;
-  width: 200px;
+  min-width: 200px;
   text-align: center;
   position: relative;
   z-index: 3;
@@ -477,6 +474,8 @@ video {
 
 .info__row {
   display: flex;
+  overflow: hidden;
+  word-break: break-word;
 }
 
 .info__row + .info__row {
@@ -730,48 +729,6 @@ video {
 .sidebar__btn.is-active {
   background-image: url(../img/menu_closed.svg);
   right: 10px;
-}
-
-.icon-arrow {
-  width: 1em;
-  height: 1em;
-  fill: initial;
-}
-
-.icon-bitcoin {
-  width: 1em;
-  height: 1em;
-  fill: initial;
-}
-
-.icon-coins {
-  width: 1em;
-  height: 1em;
-  fill: initial;
-}
-
-.icon-history {
-  width: 1em;
-  height: 1em;
-  fill: initial;
-}
-
-.icon-home {
-  width: 1em;
-  height: 1em;
-  fill: initial;
-}
-
-.icon-logout {
-  width: 1em;
-  height: 1em;
-  fill: initial;
-}
-
-.icon-settings {
-  width: 1em;
-  height: 1em;
-  fill: initial;
 }
 
 .table-container {
@@ -1033,6 +990,104 @@ video {
 
 .no-csspointerevents .nice-select.open .list {
   display: block;
+}
+
+.calc {
+  background-color: #dfe8ef;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+@media only screen and (min-width: 768px) {
+  .calc {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 1680px) {
+  .calc {
+    padding: 30px;
+  }
+}
+
+.calc__row {
+  display: flex;
+  overflow: hidden;
+  word-break: break-word;
+}
+
+.calc__title {
+  flex: 1 1;
+  padding-right: 10px;
+  margin-bottom: 20px;
+}
+
+.calc__title_value {
+  text-transform: uppercase;
+  color: #0a164b;
+  font-size: 24px;
+}
+
+@media only screen and (min-width: 1680px) {
+  .calc__title_value {
+    font-size: 30px;
+  }
+}
+
+.calc__balance {
+  flex: 0 0;
+  min-width: 30%;
+}
+
+.ref {
+  background-color: #dfe8ef;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+@media only screen and (min-width: 768px) {
+  .ref {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 1680px) {
+  .ref {
+    padding: 30px;
+  }
+}
+
+.ref__row {
+  display: flex;
+  overflow: hidden;
+  word-break: break-word;
+}
+
+.ref__title {
+  flex: 1 1;
+  padding-right: 10px;
+  margin-bottom: 20px;
+}
+
+.ref__title_value {
+  text-transform: uppercase;
+  color: #0a164b;
+  font-size: 24px;
+}
+
+@media only screen and (min-width: 1680px) {
+  .ref__title_value {
+    font-size: 30px;
+  }
+}
+
+.ref__balance {
+  flex: 0 0;
+  min-width: 30%;
 }
  
 
