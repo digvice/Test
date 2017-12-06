@@ -5,7 +5,7 @@
     padding: 20px;
     @include medium;
     @include rmin(768) {
-      width: 80%;
+      width: 100%;
     }
     @include rmin(1680) {
       padding: 30px;
@@ -16,8 +16,27 @@
     //     margin-top: 0;
     //   }
     // }
+    &__sm{
+        width: 100%;
+        background-color: #dfe8ef;
+        margin-bottom: 20px;
+        padding: 20px;
+        @include rmin(768) {
+            width: 49%;
+        }
+        @include rmin(1680) {
+            padding: 30px;
+        }
+        &:last-of-type{
+            margin-bottom: auto;
+        }
+        .ref__row{
+            flex-direction: row;
+        }
+    }
     &__row {
       display: flex;
+      flex-direction: column;
       overflow: hidden;
       word-break: break-word;
     //   & + & {
@@ -38,7 +57,31 @@
       }
     }
     &__balance {
-      flex: 0 0;
+      flex: 1 1;
       min-width: 30%;
+    }
+    &__link{
+        width: 100%;
+        border: 2px solid $dark-blue;
+        padding: 8px;
+        margin-top: 5px;
+        @include medium;
+        font-size: 14px;
+        background-color: transparent;
+        -webkit-appearance: none;
+        border-radius: 0;
+        @include rmin(768) {
+          font-size: 16px;
+        }
+        @include rmin(1680) {
+          padding: 13px;
+          font-size: 18px;
+        }
+    }
+    &__users{
+        margin: 20px 0 0;
+        li{
+            margin: 10px 0;
+        }
     }
   }
