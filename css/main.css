@@ -662,6 +662,7 @@ video {
 
 .sidebar.is-opened .sidebar__logo img.opened {
   display: block;
+  width: 80%;
 }
 
 .sidebar.is-opened .nav__link .text {
@@ -675,7 +676,6 @@ video {
 }
 
 .sidebar__logo {
-  max-width: 185px;
   margin: 10px auto 50px;
   height: 25px;
   color: #c9d8e4;

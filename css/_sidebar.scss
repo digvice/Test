@@ -34,6 +34,7 @@
       display: none;
       &.opened {
         display: block;
+        width: 80%;
       }
     }
     .nav__link .text{
@@ -46,7 +47,7 @@
     overflow: hidden;
   }
   &__logo {
-    max-width: 185px;
+    // max-width: 185px;
     margin: 10px auto 50px;
     height: 25px;
     color: $grey;
