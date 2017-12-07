@@ -84,7 +84,15 @@
       }
     }
   }
-  
+
+  input[type="checkbox"]{
+    -webkit-appearance: checkbox;
+    width: auto;
+    border: 1px solid;
+  }
+
+
+
   .select {
     @include medium;
     font-size: 14px;

@@ -1,0 +1,51 @@
+.login-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .login {
+    @include vcenter;
+    @include tile;
+    // width: 100%;
+    min-width: 280px;
+    max-width: 400px;
+    margin-bottom: 20px;
+    padding: 20px;
+    @include medium;
+    @include rmin(768) {
+      width: 49%;
+    }
+    @include rmin(1680) {
+      padding: 30px;
+    }
+    // & + & {
+    //   margin-top: 20px;
+    //   @include rmin(768) {
+    //     margin-top: 0;
+    //   }
+    // }
+    &__link {
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      word-break: break-word;
+      font-size: 14px;
+        a{
+            margin: 8px 0;
+        }
+    }
+    &__h2{
+        margin-bottom: 32px;
+        font-weight: 300;
+        font-size: 2em;
+    }
+  }
+
+  .register__container{
+      display: flex;
+      div{
+          padding:0 20px;
+          flex: 1 1;
+      }
+  }
