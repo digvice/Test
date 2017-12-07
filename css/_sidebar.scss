@@ -1,7 +1,7 @@
 .sidebar {
   min-width: 100vw;
-  // background-color: #dfe8ef;
-  background: $bg-gradient;
+  background-color: $tile_bg;
+  // background: $bg-gradient;
   padding: 30px 20px;
   display: flex;
   flex-direction: column;
@@ -82,7 +82,7 @@
       height: 50px;
     }
     &:hover {
-      background-color: lighten($light-grey, 10);
+      background-color: lighten($tile_bg, 10);
     }
     &.is-active {
       background-image: url(../img/menu_closed.svg);

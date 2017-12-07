@@ -15,11 +15,12 @@
       }
       input {
         width: 100%;
-        border: 2px solid $dark-blue;
+        border: 2px solid $text-color;
         padding: 8px;
         margin-top: 5px;
         @include medium;
         font-size: 14px;
+        color: $text-color;
         background-color: transparent;
         -webkit-appearance: none;
         border-radius: 0;
@@ -32,7 +33,7 @@
         }
       }
       label {
-        color: $dark-blue;
+        color: $text-color;
         @include medium;
         font-size: 18px;
         z-index: 1;
@@ -119,9 +120,10 @@
     padding: 0px 25px;
     height: 35px;
     line-height: 35px;
-    border: 2px solid $blue;
+    // border: 2px solid $blue;
     border-radius: 0;
-    background-color: $blue;
+    // background-color: $blue;
+    background-color: darken($tile_bg, 10);
     color: #fff;
     box-shadow: none;
     // width: 200px;

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&subset=cyrillic");
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5,
 h6, p, blockquote, pre, a, abbr, acronym, address, big,
 cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small,
@@ -82,9 +83,10 @@ html {
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
   font-size: 14px;
-  color: #252525;
+  color: #ffffff;
   background-color: #fff;
   width: 100vw;
 }
@@ -119,6 +121,7 @@ video {
   display: flex;
   position: relative;
   min-height: 100vh;
+  background-color: #1d2731;
 }
 
 .container {
@@ -141,10 +144,9 @@ video {
 
 .title {
   font-size: 30px;
-  color: #0a164b;
-  padding-left: 20px;
-  font-family: Arial, sans-serif;
-  margin-top: 60px;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
   margin-bottom: 20px;
 }
 
@@ -215,7 +217,8 @@ video {
 
 .header__login {
   font-size: 16px;
-  font-family: Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
   line-height: 40px;
   position: relative;
 }
@@ -260,11 +263,13 @@ video {
 
 .form__field input {
   width: 100%;
-  border: 2px solid #0a164b;
+  border: 2px solid #ffffff;
   padding: 8px;
   margin-top: 5px;
-  font-family: Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
   font-size: 14px;
+  color: #ffffff;
   background-color: transparent;
   -webkit-appearance: none;
   border-radius: 0;
@@ -284,8 +289,9 @@ video {
 }
 
 .form__field label {
-  color: #0a164b;
-  font-family: Arial, sans-serif;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
   font-size: 18px;
   z-index: 1;
   transition: transform .3s;
@@ -346,7 +352,8 @@ video {
 }
 
 .select {
-  font-family: Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
   font-size: 14px;
 }
 
@@ -391,9 +398,8 @@ video {
   padding: 0px 25px;
   height: 35px;
   line-height: 35px;
-  border: 2px solid #47a9d6;
   border-radius: 0;
-  background-color: #47a9d6;
+  background-color: rgba(33, 49, 60, 0.97);
   color: #fff;
   box-shadow: none;
   min-width: 200px;
@@ -427,7 +433,7 @@ video {
 .btn_green {
   background-color: #7abc61;
   border-color: #7abc61;
-  color: #252525;
+  color: #ffffff;
 }
 
 .btn_green:hover {
@@ -438,7 +444,7 @@ video {
 .btn_red {
   background-color: #db5e5f;
   border-color: #db5e5f;
-  color: #252525;
+  color: #ffffff;
 }
 
 .btn_red:hover {
@@ -453,11 +459,14 @@ video {
 }
 
 .info {
-  background-color: #dfe8ef;
+  background-color: rgba(51, 76, 93, 0.97);
+  border-radius: 0px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   width: 100%;
   margin-bottom: 20px;
   padding: 20px;
-  font-family: Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
 }
 
 @media only screen and (min-width: 768px) {
@@ -489,7 +498,6 @@ video {
 
 .info__title_value {
   text-transform: uppercase;
-  color: #0a164b;
   font-size: 24px;
 }
 
@@ -507,7 +515,8 @@ video {
 .nav {
   font-size: 12px;
   text-transform: uppercase;
-  font-family: Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
 }
 
 @media only screen and (min-width: 1680px) {
@@ -580,7 +589,8 @@ video {
 
 .settings__link {
   padding: 15px 30px;
-  font-family: Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
   font-size: 16px;
   text-transform: uppercase;
   color: #0a164b;
@@ -613,7 +623,7 @@ video {
 
 .sidebar {
   min-width: 100vw;
-  background: linear-gradient(45deg, #32454c, #26333c);
+  background-color: rgba(51, 76, 93, 0.97);
   padding: 30px 20px;
   display: flex;
   flex-direction: column;
@@ -723,7 +733,7 @@ video {
 }
 
 .sidebar__btn:hover {
-  background-color: #b8cbda;
+  background-color: rgba(69, 103, 126, 0.97);
 }
 
 .sidebar__btn.is-active {
@@ -738,10 +748,11 @@ video {
 
 .table {
   margin-bottom: 50px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 .table thead {
-  background-color: #96b2c9;
+  background-color: rgba(51, 76, 93, 0.97);
   color: #fff;
   text-align: left;
 }
@@ -752,7 +763,7 @@ video {
 
 .table tbody {
   border-top: 15px solid #fff;
-  background-color: #dfe8ef;
+  background-color: rgba(69, 103, 126, 0.97);
   font-size: 16px;
 }
 
@@ -764,6 +775,8 @@ video {
 
 .table td, .table th {
   padding: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
 }
 
 .table_wallets tr td:last-child {
@@ -931,7 +944,7 @@ video {
 }
 
 .nice-select .list {
-  background-color: #fff;
+  background-color: rgba(51, 76, 93, 0.97);
   box-sizing: border-box;
   margin-top: 4px;
   opacity: 0;
@@ -971,7 +984,7 @@ video {
 }
 
 .nice-select .option:hover, .nice-select .option.focus, .nice-select .option.selected.focus {
-  background-color: #f6f6f6;
+  background-color: rgba(69, 103, 126, 0.97);
 }
 
 .nice-select .option.selected {
@@ -993,11 +1006,14 @@ video {
 }
 
 .calc {
-  background-color: #dfe8ef;
+  background-color: rgba(51, 76, 93, 0.97);
+  border-radius: 0px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   width: 100%;
   margin-bottom: 20px;
   padding: 20px;
-  font-family: Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1042,11 +1058,14 @@ video {
 }
 
 .ref {
-  background-color: #dfe8ef;
+  background-color: rgba(51, 76, 93, 0.97);
+  border-radius: 0px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   width: 100%;
   margin-bottom: 20px;
   padding: 20px;
-  font-family: Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1063,7 +1082,9 @@ video {
 
 .ref__sm {
   width: 100%;
-  background-color: #dfe8ef;
+  background-color: rgba(51, 76, 93, 0.97);
+  border-radius: 0px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   margin-bottom: 20px;
   padding: 20px;
 }
@@ -1103,7 +1124,6 @@ video {
 
 .ref__title_value {
   text-transform: uppercase;
-  color: #0a164b;
   font-size: 24px;
 }
 
@@ -1120,11 +1140,13 @@ video {
 
 .ref__link {
   width: 100%;
-  border: 2px solid #0a164b;
+  height: 40px;
+  border: 2px solid #ffffff;
   padding: 8px;
   margin-top: 5px;
-  font-family: Arial, sans-serif;
-  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
   background-color: transparent;
   -webkit-appearance: none;
   border-radius: 0;

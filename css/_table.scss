@@ -4,8 +4,9 @@
 }
 .table {
   margin-bottom: 50px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   thead {
-    background-color: $light-grey;
+    background-color: $tile_bg;
     color: #fff;
     text-align: left;
   }
@@ -14,7 +15,7 @@
   }
   tbody {
     border-top: 15px solid #fff;
-    background-color: #dfe8ef;
+    background-color: lighten($tile_bg, 10);;
     font-size: 16px;
     @include rmin(768) {
       font-size: 18px;
@@ -22,6 +23,7 @@
   }
   td, th {
     padding: 20px;
+    @include medium;
   }
   &_wallets {
     tr td:last-child {

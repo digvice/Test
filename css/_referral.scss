@@ -1,5 +1,5 @@
 .ref {
-    background-color: #dfe8ef;
+    @include tile;
     width: 100%;
     margin-bottom: 20px;
     padding: 20px;
@@ -18,7 +18,7 @@
     // }
     &__sm{
         width: 100%;
-        background-color: #dfe8ef;
+        @include tile;      
         margin-bottom: 20px;
         padding: 20px;
         @include rmin(768) {
@@ -49,7 +49,6 @@
       margin-bottom: 20px;
       &_value {
         text-transform: uppercase;
-        color: $dark-blue;
         font-size: 24px;
         @include rmin(1680) {
           font-size: 30px;
@@ -62,11 +61,12 @@
     }
     &__link{
         width: 100%;
-        border: 2px solid $dark-blue;
+        height: 40px;
+        border: 2px solid $text-color;
         padding: 8px;
         margin-top: 5px;
         @include medium;
-        font-size: 14px;
+        font-size: 18px;
         background-color: transparent;
         -webkit-appearance: none;
         border-radius: 0;
