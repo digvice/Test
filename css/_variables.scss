@@ -126,7 +126,9 @@ video{
   color: $alert;
   margin: 20px 0;
 }
-
+select {
+  display: none;
+}
 // Styles for tiles:
 @mixin tile{
   background-color: $tile_bg;

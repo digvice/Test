@@ -184,6 +184,10 @@ video {
   margin: 20px 0;
 }
 
+select {
+  display: none;
+}
+
 .header {
   width: 100%;
   position: relative;
@@ -894,6 +898,7 @@ video {
 .nice-select.open .list {
   opacity: 1;
   pointer-events: auto;
+  border: 1px solid grey;
   -webkit-transform: scale(1) translateY(0);
   -ms-transform: scale(1) translateY(0);
   transform: scale(1) translateY(0);
@@ -1042,7 +1047,6 @@ video {
 
 .calc__title_value {
   text-transform: uppercase;
-  color: #0a164b;
   font-size: 24px;
 }
 
