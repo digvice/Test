@@ -3,7 +3,7 @@
   //colors
   $text-color: #ffffff; // main_text 252525
   $grey: #c9d8e4; // nav text
-  $light-grey: #96b2c9; // timer circle
+  $light-grey: #96b2c9; // timer circle and hover link
   $dark-blue: #0a164b; // title text
   $blue: #47a9d6; //buttons_bg
   $bg-grey: #e6ebf0; // section_bg
@@ -46,6 +46,7 @@
 body{
   @include light;
   font-size: 14px;
+  // letter-spacing: 1px;
   color: $text-color;
   background-color: #fff;
   width: 100vw;

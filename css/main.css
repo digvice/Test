@@ -209,6 +209,7 @@ select {
 .header__logo {
   width: 100px;
   height: auto;
+  padding: 5px 0;
 }
 
 .header__content {
@@ -1154,7 +1155,7 @@ input[type="checkbox"] {
 
 .ref__link {
   width: 100%;
-  height: 40px;
+  min-height: 40px;
   border: 2px solid #ffffff;
   padding: 8px;
   margin-top: 5px;
@@ -1233,6 +1234,11 @@ input[type="checkbox"] {
   margin: 8px 0;
 }
 
+.login__link a:hover {
+  cursor: pointer;
+  color: #96b2c9;
+}
+
 .login__h2 {
   margin-bottom: 32px;
   font-weight: 300;
@@ -1241,11 +1247,26 @@ input[type="checkbox"] {
 
 .register__container {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .register__container div {
-  padding: 0 20px;
+  min-width: 280px;
   flex: 1 1;
+}
+
+.register__container div:first-of-type {
+  margin: 0 20px 0 0;
+}
+
+.register__container div:first-of-type h2 {
+  font-size: 1.5em;
+  margin-bottom: 8px;
+}
+
+.register__container div:first-of-type p {
+  margin-bottom: 24px;
+  line-height: 24px;
 }
  
 
