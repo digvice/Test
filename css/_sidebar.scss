@@ -47,15 +47,13 @@
     overflow: hidden;
   }
   &__logo {
-    // max-width: 185px;
     margin: 10px auto 50px;
-    height: 25px;
     color: $grey;
     @include rmin(1024) {
       margin: 0 auto 50px;
     }
     img {
-      height: 25px;
+      max-width: 80%;
       &.opened {
         display: none;
       }

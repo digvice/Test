@@ -206,6 +206,11 @@ select {
   }
 }
 
+.header__logo {
+  width: 100px;
+  height: auto;
+}
+
 .header__content {
   display: flex;
   align-items: center;
@@ -696,7 +701,6 @@ input[type="checkbox"] {
 
 .sidebar__logo {
   margin: 10px auto 50px;
-  height: 25px;
   color: #c9d8e4;
 }
 
@@ -707,7 +711,7 @@ input[type="checkbox"] {
 }
 
 .sidebar__logo img {
-  height: 25px;
+  max-width: 80%;
 }
 
 .sidebar__logo img.opened {

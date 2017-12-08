@@ -8,6 +8,10 @@
     @include rmin(1680) {
       padding-top: 20px;
     }
+    &__logo{
+      width: 100px;
+      height: auto;
+    }
     &__content {
       display: flex;
       align-items: center;
