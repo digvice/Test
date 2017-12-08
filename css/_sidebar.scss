@@ -34,7 +34,8 @@
       display: none;
       &.opened {
         display: block;
-        width: 80%;
+        width: auto; //size of logo
+        max-height: 100px;
       }
     }
     .nav__link .text{
@@ -53,7 +54,8 @@
       margin: 0 auto 50px;
     }
     img {
-      max-width: 80%;
+      // max-width: 80%; //size of logo
+      max-height: 100px;
       &.opened {
         display: none;
       }

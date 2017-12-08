@@ -3,12 +3,13 @@
   //colors
   $text-color: #ffffff; // main_text 252525
   $grey: #c9d8e4; // nav text
-  $light-grey: #96b2c9; // timer circle and hover link
+  $light-grey: #96b2c9; // timer circle
   $dark-blue: #0a164b; // title text
-  $blue: #47a9d6; //buttons_bg
+  $blue: #47a9d6; //hover link
   $bg-grey: #e6ebf0; // section_bg
   $bg-gradient: linear-gradient(45deg, #32454c, #26333c);
   $alert: #ff1100;
+  $bg_main: #1d2731; //background color of body and main
   $tile_bg: rgba(51, 76, 93, 0.97); //Background of the tiles (info, calc, etc). Old - #dfe8ef
 
   // fonts
@@ -48,7 +49,7 @@ body{
   font-size: 14px;
   // letter-spacing: 1px;
   color: $text-color;
-  background-color: #fff;
+  background-color: $bg_main;
   width: 100vw;
   @include rmin(1024){
     font-size: 18px;
@@ -76,7 +77,7 @@ video{
   display: flex;
   position: relative;
   min-height: 100vh;
-  background-color: #1d2731;
+  background-color: $bg_main;
 }
 
 .container {
@@ -129,6 +130,13 @@ video{
 }
 select {
   display: none;
+}
+.copyToClip{
+  cursor: pointer;
+  padding-left: 10px;
+  &:hover{
+    color: $blue;
+  }
 }
 // Styles for tiles:
 @mixin tile{

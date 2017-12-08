@@ -43,7 +43,7 @@
       background-color: #7abc61;
     }
     tbody {
-      background-color: #fff;
+      background-color: lighten($tile_bg, 10);
     }
     td, th {
       padding: 10px;

@@ -64,9 +64,7 @@
         min-height: 40px;
         border: 2px solid $text-color;
         padding: 8px;
-        margin-top: 5px;
         @include medium;
-        font-size: 18px;
         background-color: transparent;
         -webkit-appearance: none;
         border-radius: 0;
@@ -77,6 +75,13 @@
           padding: 13px;
           font-size: 18px;
         }
+    }
+    &__link-container{
+      display: flex;
+      align-items: center;
+    }
+    &__txt{
+      margin-bottom: 15px;
     }
     &__users{
         margin: 20px 0 0;

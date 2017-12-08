@@ -16,8 +16,10 @@
       <div class="sidebar">
         <button class="sidebar__btn js-open-nav" type="button"></button>
         <div class="sidebar__item">
-          <!-- <div class="sidebar__logo"><img class="opened" src="img/logo.svg"><img src="img/vh.svg"></div> -->
-          <div class="sidebar__logo">ICO</div>
+          <div class="sidebar__logo">
+              <img class="opened" src="img/logo.png">
+              <img src="img/logo.png">
+          </div>
           <nav class="nav">
             <ul class="nav__list">
               <li class="nav__link active">
@@ -110,8 +112,11 @@
           <div class="info-container">
               <div class="ref">
                 <div class="ref__row">
-                  <p>Your referral link:</p>
-                  <p class="ref__link">https://2MuGUVZTnBi9GDhkJ1Lye1wkmNb1Cyr7yQW</p>
+                  <p class="ref__txt">Your referral link:</p>
+                  <div class="ref__link-container">
+                    <div class="ref__link" id="refLink">https://2MuGUVZTnBi9GDhkJ1Lye1wkmNb1Cyr7yQW</div>
+                    <i class="copyToClip fa fa-clipboard fa-lg" aria-hidden="true" onclick="copyToClipboard('#refLink')"></i>
+                  </div>
                 </div>
               </div>
 
@@ -149,6 +154,7 @@
     <!--LOAD scripts-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/clipboard.js"></script>
   </body>
 
 </html>

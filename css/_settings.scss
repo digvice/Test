@@ -26,7 +26,7 @@
       content: '';
       width: 15px;
       height: 100%;
-      background-color: $blue;
+      background-color: lighten($tile_bg, 5);
       display: block;
       position: absolute;
       left: 0;

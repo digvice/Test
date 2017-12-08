@@ -1,7 +1,10 @@
 .tab-link {
   display: block;
+  width: 100%;
+  border-radius: 0;
+  color: $text-color;
   text-align: left;
-  background-color: transparent;
+  background-color: lighten($tile_bg, 10);
 }
 
 .tabcontent {
