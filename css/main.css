@@ -1293,6 +1293,42 @@ input[type="checkbox"] {
   margin-bottom: 24px;
   line-height: 24px;
 }
+
+.list-container {
+  width: 100%;
+  overflow-x: scroll;
+}
+
+.list {
+  position: relative;
+  margin-bottom: 50px;
+  padding: 20px;
+  background-color: rgba(51, 76, 93, 0.97);
+  border-radius: 0px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.list li {
+  padding: 5px;
+}
+
+.list li ul {
+  padding-left: 32px;
+  margin-bottom: 20px;
+}
+
+.list li div {
+  display: inline-block;
+  min-width: 90px;
+}
+
+.list li div:first-child {
+  min-width: 350px;
+}
+
+.list li div:not(:first-child) {
+  margin-left: 50px;
+}
  
 
  /*# sourceMappingURL= main.css.map */

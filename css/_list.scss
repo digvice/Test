@@ -1,0 +1,36 @@
+.list-container {
+    width: 100%;
+    overflow-x: scroll;
+  }
+.list {
+    position: relative;
+    margin-bottom: 50px;
+    padding: 20px;
+    @include tile;
+    li{
+        padding: 5px;
+        // &:nth-child(odd){
+        //     background-color: grey;
+        // }
+        // &:nth-child(even){
+        //     background-color: green;
+        // }
+        
+    }
+    li ul{
+        padding-left: 32px;
+        margin-bottom: 20px;
+    }
+    li div{
+        display: inline-block;
+        min-width: 90px;
+        &:first-child{
+            min-width: 350px;
+        }
+        &:not(:first-child){
+            margin-left: 50px;
+        }
+        
+    }
+
+}
