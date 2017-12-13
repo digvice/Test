@@ -138,6 +138,9 @@ select {
     color: $blue;
   }
 }
+.border_bot{
+  border-bottom: 2px solid $text-color;
+}
 // Styles for tiles:
 @mixin tile{
   background-color: $tile_bg;

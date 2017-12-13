@@ -197,6 +197,10 @@ select {
   color: #47a9d6;
 }
 
+.border_bot {
+  border-bottom: 2px solid #ffffff;
+}
+
 .header {
   width: 100%;
   position: relative;

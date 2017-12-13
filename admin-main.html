@@ -7,32 +7,93 @@
     <meta name="viewport" content="width=320, initial-scale=1, user-scalable=no">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" media="all" href="css/main.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
   </head>
 
   <body>
     <!--content-->
     <main class="main">
-      <div class="sidebar"><button class="sidebar__btn js-open-nav" type="button"></button>
+      <div class="sidebar">
+        <button class="sidebar__btn js-open-nav" type="button"></button>
         <div class="sidebar__item">
-          <!-- <div class="sidebar__logo"><img class="opened" src="img/logo.svg"><img src="img/vh.svg"></div> -->
-          <div class="sidebar__logo">ICO</div>
-          
+          <div class="sidebar__logo">
+              <img class="opened" src="img/logo.png">
+              <img src="img/logo.png">
+          </div>
           <nav class="nav">
             <ul class="nav__list">
-              <li class="nav__link active"><a href="#"> <span class="icon"><svg class="icon icon-home"><use xlink:href="img/sprite.svg#icon-home"></use></svg></span><span class="text">Главная</span></a></li>
-              <li class="nav__link"><a href="#"> <span class="icon"><svg class="icon icon-bitcoin"><use xlink:href="img/sprite.svg#icon-bitcoin"></use></svg></span><span class="text">Инвестировать в BTC</span></a></li>
-              <li class="nav__link"><a href="#"> <span class="icon"><svg class="icon icon-coins"><use xlink:href="img/sprite.svg#icon-coins"></use></svg></span><span class="text">Инвестировать альткоины</span></a></li>
-              <li class="nav__link"><a href="#"> <span class="icon"><svg class="icon icon-history"><use xlink:href="img/sprite.svg#icon-history"></use></svg></span><span class="text">История транзакций</span></a></li>
-              <li class="nav__link"><a href="#"> <span class="icon"><svg class="icon icon-history"><use xlink:href="img/sprite.svg#icon-history"></use></svg></span><span class="text">Еще меню</span></a></li>
-              <li class="nav__link"><a href="#"> <span class="icon"><svg class="icon icon-history"><use xlink:href="img/sprite.svg#icon-history"></use></svg></span><span class="text">Еще меню</span></a></li>
+              <li class="nav__link active">
+                <a href="investor-main.html" title="Main">
+                  <i class="icon fa fa-home fa-fw"></i>
+                  <span class="text">Main</span>
+                </a>
+              </li>
+              <li class="nav__link">
+                <a href="admin-send.html" title="Send coins">
+                  <i class="icon fa fa-exchange fa-fw"></i>
+                  <span class="text">Send coins</span>
+                </a>
+              </li>
+              <li class="nav__link">
+                <a href="admin-invoice_processing.html" title="Invoice processing">
+                  <i class="icon fa fa-id-card-o fa-fw"></i>
+                  <span class="text">Invoice processing</span>
+                </a>
+              </li>
+              <li class="nav__link">
+                <a href="admin-referral.html" title="Referral program">
+                  <i class="icon fa fa-user-plus fa-fw"></i>
+                  <span class="text">Referral program</span>
+                </a>
+              </li>
+              <li class="nav__link">
+                <a href="admin-withdrawals.html" title="Withdrawals">
+                  <i class="icon fa fa-money fa-fw"></i>
+                  <span class="text">Withdrawals</span>
+                </a>
+              </li>
+              <li class="nav__link">
+                <a href="admin-investors.html" title="Investors">
+                  <i class="icon fa fa-users fa-fw"></i>
+                  <span class="text">Investors</span>
+                </a>
+              </li>
+              <li class="nav__link">
+                <a href="admin-history.html" title="Transaction history">
+                  <i class="icon fa fa-history fa-fw"></i>
+                  <span class="text">Transaction history</span>
+                </a>
+              </li>
+              <!-- <li class="nav__link">
+                <a href="investor-referral.html" title="Referral program">
+                  <i class="icon fa fa-user-plus fa-fw"></i>
+                  <span class="text">Referral program</span>
+                </a>
+              </li> -->
+              <!-- <li class="nav__link">
+                <a href="investor-withdraw.html" title="Withdraw">
+                  <i class="icon fa fa-money fa-fw"></i>
+                  <span class="text">Withdraw</span>
+                </a>
+              </li> -->
             </ul>
           </nav>
         </div>
         <div class="sidebar__item">
           <nav class="nav">
             <ul class="nav__list">
-              <li class="nav__link"><a href="#"> <span class="icon"><svg class="icon icon-settings"><use xlink:href="img/sprite.svg#icon-settings"></use></svg></span><span class="text">Настройки</span></a></li>
-              <li class="nav__link"><a href="#"> <span class="icon"><svg class="icon icon-logout"><use xlink:href="img/sprite.svg#icon-logout"></use></svg></span><span class="text">Выход</span></a></li>
+              <!-- <li class="nav__link">
+                <a href="investor-settings.html" title="Settings">
+                  <i class="icon fa fa-cogs fa-fw"></i>
+                  <span class="text">Settings</span>
+                </a>
+              </li> -->
+              <li class="nav__link">
+                <a href="login.html" title="Logout">
+                  <i class="icon fa fa-sign-out fa-fw"></i>
+                  <span class="text">Logout</span>
+                </a>
+              </li>
             </ul>
           </nav>
         </div>
@@ -42,7 +103,7 @@
           <header class="header">
             <div class="header__content">
               <div class="header__item">
-                <p class="header__login">investor@experts.ico</p>
+                <p class="header__login">admin@experts.ico</p>
               </div>
               <div class="header__item"><select class="select"><option>EN</option><option>RU</option></select></div>
             </div>
@@ -50,28 +111,28 @@
           <div class="info-container">
             <div class="info">
               <div class="info__row">
-                <p class="info__title">Количество ваших токенов</p>
-                <p class="info__balance">Баланс</p>
+                <p class="info__title">Tokens you have</p>
+                <p class="info__balance">Balance</p>
               </div>
               <div class="info__row">
-                <p class="info__title info__title_value">mbc</p>
+                <p class="info__title info__title_value">COINS</p>
                 <p class="info__balance">0</p>
               </div>
             </div>
             <div class="info">
               <div class="info__row">
-                <p class="info__title">Всего продано токенов</p>
-                <p class="info__balance">Баланс</p>
+                <p class="info__title">Tokens sold</p>
+                <p class="info__balance">Balance</p>
               </div>
               <div class="info__row">
-                <p class="info__title info__title_value">mbc</p>
+                <p class="info__title info__title_value">COINS</p>
                 <p class="info__balance">0</p>
               </div>
             </div>
             <div class="info">
               <div class="info__row">
-                <p class="info__title">Общий объем инвестиций</p>
-                <p class="info__balance">Баланс</p>
+                <p class="info__title">Tokens</p>
+                <p class="info__balance">Balance</p>
               </div>
               <div class="info__row">
                 <p class="info__title info__title_value">USD</p>
@@ -80,39 +141,14 @@
             </div>
             <div class="info">
                 <div class="info__row">
-                  <p class="info__title">Количество ваших токенов</p>
-                  <p class="info__balance">Баланс</p>
+                  <p class="info__title">Your tokens</p>
+                  <p class="info__balance">Balance</p>
                 </div>
                 <div class="info__row">
-                  <p class="info__title info__title_value">mbc</p>
+                  <p class="info__title info__title_value">COINS</p>
                   <p class="info__balance">0</p>
                 </div>
               </div>
-          </div>
-          <h2 class="title">Bonus program</h2>
-          <div class="table-container">
-            <table class="table">
-              <thead>
-                <tr>
-                  <th>#</th>
-                  <th>Start</th>
-                  <th>Stop</th>
-                  <th>Timer</th>
-                  <th>Bonus</th>
-                  <th>Status</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1</td>
-                  <td> </td>
-                  <td> </td>
-                  <td> </td>
-                  <td> </td>
-                  <td> </td>
-                </tr>
-              </tbody>
-            </table>
           </div>
         </div>
       </div>
