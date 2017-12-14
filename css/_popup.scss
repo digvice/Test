@@ -1,0 +1,60 @@
+/* Popup container */
+.popup {
+    // position: relative;
+    display: inline-block;
+    cursor: pointer;
+    &:hover{
+        color: $blue;
+    }
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+    visibility: hidden;
+    width: 280px;
+    height: 100px;
+    background-color: rgba(51, 76, 93, 1);
+    border-radius: 0px;
+    box-shadow: 0px 0px 20px 6px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    color: #fff;
+    text-align: center;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 5%;
+    margin-left: -80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+// /* Popup arrow */
+// .popup .popuptext::after {
+//     content: "";
+//     position: absolute;
+//     top: 100%;
+//     left: 50%;
+//     margin-left: -5px;
+//     border-width: 5px;
+//     border-style: solid;
+//     border-color: #555 transparent transparent transparent;
+// }
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 0.3s;
+    animation: fadeIn 0.3s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}

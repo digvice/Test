@@ -118,6 +118,20 @@
                 <p class="info__title info__title_value">COINS</p>
                 <p class="info__balance">0</p>
               </div>
+                  <!-- POPUU WINDOW -->
+                  <div class="popup" onclick="myFunction()">Click me!
+                    <div class="popuptext" id="myPopup">
+                      <p>Success</p>
+                    </div>
+                    <div class="popuptext" id="myPopup2">Fail</div>
+                  </div>
+                  <script>
+                    function myFunction() {
+                        var popup = document.getElementById("myPopup");
+                        popup.classList.toggle("show");
+                    }
+                  </script>
+                  <!-- END OF POPUP WINDOW -->
             </div>
             <div class="info">
               <div class="info__row">
@@ -153,6 +167,13 @@
         </div>
       </div>
     </main>
+
+
+
+
+
+
+
     <!--LOAD scripts-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/app.js"></script>
