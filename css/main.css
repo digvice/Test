@@ -1392,6 +1392,68 @@ input[type="checkbox"] {
     opacity: 1;
   }
 }
+
+.fran {
+  background-color: rgba(51, 76, 93, 0.97);
+  border-radius: 0px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  width: 100%;
+  padding: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+@media only screen and (min-width: 768px) {
+  .fran {
+    width: 32%;
+  }
+}
+
+@media only screen and (min-width: 1680px) {
+  .fran {
+    padding: 30px;
+  }
+}
+
+.fran + .fran {
+  margin-top: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .fran + .fran {
+    margin-top: 0;
+  }
+}
+
+.fran__row {
+  display: flex;
+}
+
+.fran__row + .fran__row {
+  margin-top: 30px;
+}
+
+.fran__title {
+  flex: 1 1;
+  padding-right: 10px;
+}
+
+.fran__title_value {
+  text-transform: uppercase;
+  color: #0a164b;
+  font-size: 24px;
+}
+
+@media only screen and (min-width: 1680px) {
+  .fran__title_value {
+    font-size: 30px;
+  }
+}
+
+.fran__balance {
+  flex: 0 0;
+  min-width: 30%;
+}
  
 
  /*# sourceMappingURL= main.css.map */

@@ -1,0 +1,40 @@
+.fran {
+    @include tile;
+    width: 100%;
+    padding: 20px;
+    @include medium;
+    @include rmin(768) {
+      width: 32%;
+    }
+    @include rmin(1680) {
+      padding: 30px;
+    }
+    & + & {
+      margin-top: 20px;
+      @include rmin(768) {
+        margin-top: 0;
+      }
+    }
+    &__row {
+      display: flex;
+      & + & {
+        margin-top: 30px;
+      }
+    }
+    &__title {
+      flex: 1 1;
+      padding-right: 10px;
+      &_value {
+        text-transform: uppercase;
+        color: $dark-blue;
+        font-size: 24px;
+        @include rmin(1680) {
+          font-size: 30px;
+        }
+      }
+    }
+    &__balance {
+      flex: 0 0;
+      min-width: 30%;
+    }
+}  
