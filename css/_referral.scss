@@ -39,9 +39,9 @@
       flex-direction: column;
       overflow: hidden;
       word-break: break-word;
-    //   & + & {
-    //     margin-top: 30px;
-    //   }
+      & + & {
+        margin-top: 15px;
+      }
     }
     &__title {
       flex: 1 1;

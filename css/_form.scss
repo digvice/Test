@@ -33,9 +33,9 @@
         }
       }
       label {
-        color: $text-color;
+        // color: $text-color;
         @include medium;
-        font-size: 18px;
+        // font-size: 18px;
         z-index: 1;
         transition: transform .3s;
       }

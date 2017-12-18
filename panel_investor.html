@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <div th:fragment="panel_investor">
+        <button class="sidebar__btn js-open-nav" type="button"></button>
+        <div class="sidebar__item">
+        <div class="sidebar__logo">
+            <img class="opened" src="img/logo.png" />
+            <img class="closed" src="img/logo.png" />
+        </div>
+            <nav class="nav">
+                <ul class="nav__list">
+                <li class="nav__link active">
+                    <a href="/investor" th:title="#{main}">
+                    <i class="icon fa fa-home fa-fw"></i>
+                    <span class="text" th:text="#{main}"></span>
+                    </a>
+                </li>
+                <li class="nav__link">
+                    <a href="/investor/invest/btc" th:title="#{invest.btc}">
+                    <i class="icon fa fa-btc fa-fw"></i>
+                    <span class="text" th:text="#{invest.btc}"></span>
+                    </a>
+                </li>
+                <li class="nav__link">
+                    <a href="/investor/invest/eth" th:title="#{invest.eth}">
+                    <i class="icon fa fa-etsy fa-fw"></i>
+                    <span class="text" th:text="#{invest.eth}"></span>
+                    </a>
+                </li>
+                <li class="nav__link">
+                    <a href="/investor/invest/invoice" th:title="#{invest.invoice}">
+                    <i class="icon fa fa-euro fa-fw"></i>
+                    <span class="text" th:text="#{invest.invoice}"></span>
+                    </a>
+                </li>
+                <li class="nav__link">
+                    <a href="/investor/invest/plastic" th:title="#{invest.plastic}">
+                    <i class="icon fa fa-credit-card fa-fw"></i>
+                    <span class="text" th:text="#{invest.plastic}"></span>
+                    </a>
+                </li>
+                <li class="nav__link">
+                    <a href="/investor/transaction/history" th:title="#{invest.history}">
+                    <i class="icon fa fa-history fa-fw"></i>
+                    <span class="text" th:text="#{invest.history}"></span>
+                    </a>
+                </li>
+                <li class="nav__link">
+                    <a href="/investor/franchise" th:title="#{investor.franchise}">
+                    <i class="icon fa fa-handshake-o fa-fw"></i>
+                    <span class="text" th:text="#{investor.franchise}"></span>
+                    </a>
+                </li>
+                <li class="nav__link">
+                    <a href="/investor/referral_program" th:title="#{invest.referral}">
+                    <i class="icon fa fa-user-plus fa-fw"></i>
+                    <span class="text" th:text="#{invest.referral}"></span>
+                    </a>
+                </li>
+                <li class="nav__link">
+                    <a href="/investor/withdraw_tokens" th:title="#{invest.referral.withdraw}">
+                    <i class="icon fa fa-money fa-fw"></i>
+                    <span class="text" th:text="#{invest.referral.withdraw}"></span>
+                    </a>
+                </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="sidebar__item">
+            <nav class="nav">
+                <ul class="nav__list">
+                <li class="nav__link">
+                    <a href="#" title="Settings">
+                    <i class="icon fa fa-cogs fa-fw"></i>
+                    <span class="text">Settings</span>
+                    </a>
+                </li>
+                <li class="nav__link">
+                    <form th:action="@{/logout}" id="logout" method="post"></form>
+                    <a href="#" th:title="#{logout}" onclick="document.getElementById('logout').submit();">
+                    <i class="icon fa fa-sign-out fa-fw"></i>
+                    <span class="text" th:text="#{logout}"></span>
+                    </a>
+                </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</html>

@@ -59,6 +59,9 @@
       &.opened {
         display: none;
       }
+      &.closed{
+        max-width: 25px;
+      }
     }
   }
   &__btn {
